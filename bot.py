@@ -8,7 +8,7 @@ from dataclasses import dataclass, field
 from dotenv import load_dotenv
 load_dotenv()
 
-BOT_TOKEN = os.getenv("8413057502:AAE2W0XyjOC1Zne9BK_-UtgGhM4240NacGA"")
+BOT_TOKEN = os.getenv("8413057502:AAE2W0XyjOC1Zne9BK_-UtgGhM4240NacGA")
 if not BOT_TOKEN:
     raise SystemExit("ERROR: BOT_TOKEN missing. Set it in Render Environment Variables.")
 
@@ -305,3 +305,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
