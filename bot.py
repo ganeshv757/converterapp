@@ -274,7 +274,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     return ConversationHandler.END
 
 def main():
-    if BOT_TOKEN.startswith("PASTE_"):
+    if BOT_TOKEN.startswith("8413057502:AAE2W0XyjOC1Zne9BK_-UtgGhM4240NacGA"):
         raise SystemExit("Set your BOT_TOKEN env var or paste it in the file.")
 
     app = ApplicationBuilder().token(BOT_TOKEN).build()
@@ -326,4 +326,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
