@@ -4,6 +4,7 @@ import asyncio
 import tempfile
 import subprocess
 from dataclasses import dataclass, field
+from dotenv import load_dotenv as load
 
 from telegram import (
     Update, InputFile, ReplyKeyboardMarkup, ReplyKeyboardRemove
@@ -14,7 +15,7 @@ from telegram.ext import (
 )
 
 # ---------- CONFIG ----------
-BOT_TOKEN = os.getenv("8413057502:AAE2W0XyjOC1Zne9BK_-UtgGhM4240NacGA") or "8413057502:AAE2W0XyjOC1Zne9BK_-UtgGhM4240NacGA"
+BOT_TOKEN = load() or "8413057502:AAE2W0XyjOC1Zne9BK_-UtgGhM4240NacGA"
 WORK_DIR = os.path.join(os.path.dirname(__file__), "work")
 os.makedirs(WORK_DIR, exist_ok=True)
 
@@ -325,3 +326,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
